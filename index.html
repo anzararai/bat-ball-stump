@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bat Ball Stump | Cricket Mini Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+
+  <button class="button-choice" onclick="
+  const userChoice = 'Bat';
+  let computerChoice = generateComputerChoice()
+  finalResult = getResult(userChoice, computerChoice);
+  showResult(userChoice, computerChoice, finalResult);
+  "><img src="images/bat.png" alt="Bat-img" class="choice-img"></button>
+
+  <button class="button-choice" onclick="
+  userChoice = 'Ball';
+  computerChoice = generateComputerChoice()
+  finalResult = getResult(userChoice, computerChoice);
+  showResult(userChoice, computerChoice, finalResult);
+  "><img src="images/ball.png" alt="Ball-img" class="choice-img"></button>
+
+  <button class="button-choice" onclick="
+  userChoice = 'Stump';
+  computerChoice = generateComputerChoice()
+  finalResult = getResult(userChoice, computerChoice);
+  showResult(userChoice, computerChoice, finalResult);
+  "><img src="images/stump.png" alt="stump-img" class="choice-img"></button>
+
+  <h3 id="user-move"></h3>
+  <h3 id="computer-move"></h3>
+  <h3 id="result"></h3>
+  <h2 id="score"></h2>
+
+  <button onclick="localStorage.clear(); resetScore();">Reset</button>
+
+  <!-- Sirf script include -->
+  <script src="script.js"></script>
+</body>
+</html>
