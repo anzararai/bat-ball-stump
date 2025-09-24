@@ -14,7 +14,7 @@ You can play against the computer and keep track of wins, losses, and ties.
 ---
 
 ## 📸 Screenshot
-![Game Screenshot](./screenshot.png)
+![Game Screenshot](./Screenshot.png)
 
 ---
 
